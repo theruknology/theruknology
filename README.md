@@ -1,8 +1,8 @@
-<h2 align="left">Hi 👋! My name is Mohammed Ruknuddin and I'm a Full-Stack Developer &  AI Engineer</h2>
+<h2 align="left">Hi 👋! My name is Mohammed Ruknuddin and I'm a Systems Design and AI Engineer</h2>
 
 ###
 
-<p align="left">I'm an ML Engineer & Full-Stack Developer exploring the cutting edge of AI. My recent work involves researching Federated Learning, optimizing models, and building GenAI agents. I enjoy taking complex Python/Data Science backends and wrapping them in clean, modern web interfaces.</p>
+<p align="left">I'm an ML Engineer & Backend Systems Developer exploring the cutting edge of AI. My recent work involves researching Federated Learning, optimizing models, and building GenAI agents. I enjoy taking complex Python/Data Science backends and wrapping them in clean, modern web interfaces.</p>
 
 ###
 
