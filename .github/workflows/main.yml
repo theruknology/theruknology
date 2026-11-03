@@ -1,29 +1,45 @@
-name: Generate Snake
+name: Refresh Profile
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # Runs every 12 hours
+    - cron: "0 */12 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/main.yml, scripts/build-stats.py]
 
 permissions:
   contents: write
 
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      
-      - uses: Platane/snk@v3
-        id: snake-gif
+      - name: Generate public statistics
+        run: python3 scripts/build-stats.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit updated statistics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats-light.svg assets/stats-dark.svg data/github-stats.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh public GitHub statistics"
+            git push
+          fi
+      - uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: theruknology  # Replace with your GitHub username
+          github_user_name: theruknology
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake.gif
-      
+            dist/github-contribution-grid-snake.svg?color_snake=#ef6549&color_dots=#ece8df,#c5d0fa,#94a7ef,#6e86e4,#536cdc
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#ef6549&color_dots=#21262d,#303f70,#455da0,#657dcc,#92a7f4
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output

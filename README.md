@@ -1,65 +1,60 @@
-<h2 align="left">Hi 👋! My name is Mohammed Ruknuddin and I'm a Systems Design and AI Engineer</h2>
+<p><img src="assets/header.svg" width="100%" alt="theruknology — Mohammed Ruknuddin, with a rotating blue geometric rosette" /></p>
 
-###
+<h2>Hey, I’m Ruknuddin.</h2>
+<p>I write software in Go, Python, Rust and TypeScript. Lately that’s meant inference scheduling, tools for testing agents, and a chess trainer that picks puzzles based on how you play.</p>
+<p>I like getting into the details of how things work, and spending just as much time on how they feel to use.</p>
+<p><a href="https://www.linkedin.com/in/theruknology/">LinkedIn</a> &nbsp; / &nbsp; <a href="https://www.youtube.com/@the_ruknology">YouTube</a> &nbsp; / &nbsp; <a href="https://www.instagram.com/the_ruknology/">Instagram</a></p>
 
-<p align="left">I'm an ML Engineer & Backend Systems Developer exploring the cutting edge of AI. My recent work involves researching Federated Learning, optimizing models, and building GenAI agents. I enjoy taking complex Python/Data Science backends and wrapping them in clean, modern web interfaces.</p>
+<h2>Things I’ve been building</h2>
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/theruknology/govessel">Vessel</a></h3>
+<p>An inference gateway that shares backend capacity between tenants. Weighted scheduling, token-cost estimates and deadline-aware admission.</p>
+<p><sub>Go · gRPC · Prometheus</sub></p>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/theruknology/shahmat2">SHAHMAT</a></h3>
+<p>A chess tactics trainer with a Bayesian skill model for each theme. Selects puzzles as you play; runs entirely in the browser.</p>
+<p><sub>TypeScript · Vite</sub></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/theruknology/agent-bazaar">bazaar</a></h3>
+<p>An x402 payment library and a simulated market of scripted agents. Payment budgets, replay protection and a double-entry ledger.</p>
+<p><sub>Go · x402</sub></p>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/theruknology/peek">peek</a></h3>
+<p>Local semantic search over tmux scrollback. Find earlier terminal output with a natural-language query, then jump back to it.</p>
+<p><sub>Rust · SQLite · Ratatui</sub></p>
+</td>
+</tr>
+</table>
 
-###
+<details>
+<summary>Earlier-stage work</summary>
+<p><a href="https://github.com/theruknology/agentprobe">AgentProbe</a> tests whether an LLM agent attempts prohibited tool calls in adversarial scenarios. Python CLI with mocked tools; the scenario set is still small.</p>
+<p><a href="https://github.com/theruknology/llm-rs">llm-rs</a> is a learning project: implementing transformer inference in Rust, targeting WebAssembly. Work in progress.</p>
+</details>
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=theruknology&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=theruknology&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
-</div>
+<h2>peek, in use</h2>
+<p>Search for an earlier error, then jump back to it in tmux.</p>
+<p><a href="https://github.com/theruknology/peek"><img src="https://raw.githubusercontent.com/theruknology/peek/main/docs/peek-demo.gif" width="100%" alt="Peek demo: a natural-language query retrieves terminal output and jumps to the matching tmux pane. The repository includes a text walkthrough." /></a></p>
 
-###
+<p><sub>Other tools used across these projects: Docker, Prometheus, Vite, sqlite-vec and Ratatui.</sub></p>
 
-<img align="right" height="150" src="https://miro.medium.com/v2/resize:fit:1280/format:webp/1*ubCR6WyFNthQVQ9D4AIO9g.gif"  />
-
-###
-
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" alt="typescript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="java logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="30" alt="cplusplus logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="30" alt="pytorch logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="30" alt="tensorflow logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="30" alt="nextjs logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="react logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" height="30" alt="firebase logo"  />
-</div>
-
-###
-
-<div align="left">
-  <a href="https://www.youtube.com/@the_ruknology" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="youtube logo"  />
-  </a>
-  <a href="https://www.instagram.com/the_ruknology/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
-  </a>
-  <a href="https://www.linkedin.com/in/theruknology/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
-  </a>
-</div>
-
-###
-
-<br clear="both">
+<h2>On GitHub</h2>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/theruknology/theruknology/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/theruknology/theruknology/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/theruknology/theruknology/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/stats-light.svg" />
+  <img src="assets/stats-light.svg" width="100%" alt="GitHub totals: stars received, public repositories, authored pull requests, issues opened, repository forks and followers. Public data only; update date and scope appear on the card." />
 </picture>
 
-###
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/theruknology/theruknology/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/theruknology/theruknology/output/github-contribution-grid-snake.svg" />
+  <img src="https://raw.githubusercontent.com/theruknology/theruknology/output/github-contribution-grid-snake.svg" width="100%" alt="A coral snake moves through my GitHub contribution grid, clearing blue cells as it goes." />
+</picture>
+<p><sub>My GitHub contributions, with a snake. <a href="https://github.com/theruknology/theruknology/actions/workflows/main.yml">Updated every 12 hours.</a></sub></p>
